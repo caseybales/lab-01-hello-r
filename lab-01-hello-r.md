@@ -14,13 +14,13 @@ library(datasauRus)
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here.
+datasaurus\_dozen %\>% count(dataset) %\>% print(13)
+
+There are 1846 rows and 3 variables in the data frame. In the output
+there are 13 rows and 2 columns and for each dataset there is an n of
+142.
 
 ### Exercise 2
-
-The answers for this Exercise are given for you below. But you should
-clean up some of the narrative so that it only includes what you want to
-turn in.
 
 First let’s plot the data in the dino dataset:
 
