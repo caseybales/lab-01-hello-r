@@ -27,7 +27,7 @@ There are 1846 rows and 3 variables in the data frame. In the output there are 1
 
 
 First let's plot the data in the dino dataset:
-
+  
 ```{r plot-dino, fig.height=3, fig.width=6}
 dino_data <- datasaurus_dozen %>%
   filter(dataset == "dino")
@@ -42,6 +42,8 @@ And next calculate the correlation between `x` and `y` in this dataset:
 dino_data %>%
   summarize(r = cor(x, y))
 ```
+
+The correlation for the dino dataset is -0.0645.
 
 ### Exercise 3
 

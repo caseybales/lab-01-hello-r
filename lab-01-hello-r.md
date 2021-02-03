@@ -46,6 +46,8 @@ dino_data %>%
     ##     <dbl>
     ## 1 -0.0645
 
+The correlation for the dino dataset is -0.0645.
+
 ### Exercise 3
 
 Add code and narrative as needed. Note that the R chunks are labelled
