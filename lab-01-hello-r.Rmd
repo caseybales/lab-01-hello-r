@@ -16,9 +16,12 @@ library(datasauRus)
 
 ### Exercise 1
 
+
+```{r- datasaurus_dozen}
 datasaurus_dozen %>%
   count(dataset) %>%
   print(13)
+```
 
 
 There are 1846 rows and 3 variables in the data frame. In the output there are 13 rows and 2 columns and for each dataset there is an n of 142.
@@ -80,7 +83,20 @@ circle_data %>%
 
 The correlation for the circle dataset is -.0683. The correlation is greater than the correlation for the dino and star datasets.
 
+
 ### Exercise 5
 
-Add code and narrative as needed.
-To add R chunks either type out the backticks, curly braces, and the letter `r` or use the Insert chunk button above, green C+.
+```{r all-plots, fig.height=6, fig.width=3}
+ggplot(datasaurus_dozen, aes(x = x, y = y, color = dataset))+
+  geom_point()+
+  facet_wrap(~ dataset, ncol = 3) +
+  theme(legend.position = "none")
+```
+
+```{r all-correlations}
+datasaurus_dozen %>%
+  group_by(dataset) %>%
+  summarize(r = cor(x, y)) %>%
+  print(13)
+```
+
