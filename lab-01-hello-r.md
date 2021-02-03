@@ -1,7 +1,7 @@
 Lab 01 - Hello R
 ================
-Insert your name here
-Insert date here
+Casey Bales
+February 3rd 2021
 
 ## Load packages and data
 
